@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  margin: auto;
+  max-width: 1400px;
+}
+
+.theme-white.active {
+  background: black;
+/*   color: white; */
+}
+
+.theme-dark.active {
+  background: white;
+/*   color: black; */
+}
+
+.theme-white {
+  background: white;
+  color: black;
+}
+
+.theme-dark {
+  background: black;
+  color: white;
+}
+
+#theme {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+}

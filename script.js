@@ -28,3 +28,21 @@ document.querySelector('body').addEventListener('mousedown', (e) => {
     changeBg();
   }
 });
+
+document.querySelector('#zoom').addEventListener('click', function(e){
+        zoom.innerHTML =
+    (zoom.innerHTML === '-') ? zoom.innerHTML = '+' : zoom.innerHTML = '-';
+  
+        if(document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen();
+        }
+        else{
+            document.documentElement.mozRequestFullScreen();
+        }
+        if(document.documentElement.webkitRequestFullscreen) {
+              document.webkitCancelFullScreen();
+         }
+          else{
+              document.mozCancelFullScreen();
+          }
+});

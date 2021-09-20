@@ -6,10 +6,6 @@ body {
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
 p::-webkit-scrollbar {
   width: 0;
 }
@@ -34,16 +30,7 @@ p::-webkit-scrollbar {
   color: white;
 }
 
-#theme {
-  top: 0;
-}
-
-#traning {
-  bottom: 0;
-}
-
-#theme, #traning {
-  left: 0;
+#theme, #traning, #zoom {
   position: absolute;
   width: 100%;
   border: 0;
@@ -52,12 +39,30 @@ p::-webkit-scrollbar {
   cursor: pointer;
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
   background: #eee;
+  border: 1px solid #000;
 }
 
-#theme:hover, #traning:hover {
-  background: #eee;  
+#theme, #zoom {
+  top: 0;
+  width: 50%;
 }
 
+#theme {
+  left: 0;
+}
+
+#zoom {
+  right: 0;
+}
+
+#traning {
+  bottom: 0;
+  left: 0;
+}
+
+#theme:hover, #traning:hover, #zoom:hover {
+  background: #eee;
+}
 
 p {
   display: block;

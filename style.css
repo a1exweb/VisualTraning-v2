@@ -2,22 +2,30 @@ body {
   font-family: sans-serif;
   display: flex;
   justify-content: center;
+  font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
 p {
-  margin: 150px auto 0;
+  display: block;
+  margin: auto;
+  padding: 100px 5px;
   max-width: 1400px;
-  font-size: calc(18px + 22 * ((100vw - 320px) / 960));
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+p::-webkit-scrollbar {
+  width: 0;
 }
 
 .theme-white.active {
     background: black;
-/*   color: white; */
+  /* color: white; */
 }
 
 .theme-dark.active {
     background: white;
-/*   color: black; */
+  /* color: black; */
 }
 
 .theme-white {
@@ -31,11 +39,40 @@ p {
 }
 
 #theme {
-  position: absolute;
   top: 0;
+}
+
+#traning {
+  bottom: 0;
+}
+
+#theme, #traning {
   left: 0;
+  position: absolute;
   width: 100%;
   border: 0;
+  overflow: none;
   padding: 20px;
   cursor: pointer;
+  font-size: calc(18px + 22 * ((100vw - 320px) / 960));
+}
+
+.description {
+  display: none;
+}
+
+@media (min-width: 980px) {
+  .description {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eee;
+    padding: 20px;
+  }
+
+  p {
+    padding: 150px 20px;
+  }
 }

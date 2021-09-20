@@ -13,12 +13,6 @@ theme.addEventListener('click', () => {
   document.querySelector('body').classList.toggle('theme-dark');
 });
 
-traning.addEventListener('click', () => {
-  changeBg();
-});
-
-setTimeout
-
 const loader = document.querySelector('.description')
 
 setTimeout(() => {
@@ -27,3 +21,10 @@ setTimeout(() => {
   if (loader.style.opacity == 0) clearInterval(interval);
 }, 10);
 }, 1500);
+
+
+document.querySelector('body').addEventListener('mousedown', (e) => {
+  if (!e.target.matches('p') && !e.target.matches('#theme')) {
+    changeBg();
+  }
+});

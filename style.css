@@ -58,6 +58,11 @@ p::-webkit-scrollbar {
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
+
+.description {
+  display: none;
+}
+
 @media (min-width: 980px) {
   .description {
     display: block;
@@ -68,11 +73,7 @@ p::-webkit-scrollbar {
     background: #eee;
     padding: 20px;
   }
-
   p {
     padding: 10px 20px;
   }
-}
-.description {
-  display: none;
 }

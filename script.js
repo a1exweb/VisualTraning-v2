@@ -4,11 +4,13 @@ function changeBg() {
 
 document.addEventListener('keyup', (e) => {
    if (e.keyCode == 38) { //стрелочка ввехрх
-   changeBg(); 
+   changeBg();
   }
 });
 
 theme.addEventListener('click', () => {
+  theme.innerHTML =
+    (theme.innerHTML === 'Ночь') ? theme.innerHTML = 'День' : theme.innerHTML = 'Ночь';
   document.querySelector('body').classList.toggle('theme-white');
   document.querySelector('body').classList.toggle('theme-dark');
 });

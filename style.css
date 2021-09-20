@@ -8,7 +8,7 @@ body {
 p {
   display: block;
   margin: auto;
-  padding: 100px 5px;
+  padding: 150px 5px;
   max-width: 1400px;
   max-height: 80vh;
   overflow-y: scroll;
@@ -20,12 +20,12 @@ p::-webkit-scrollbar {
 
 .theme-white.active {
     background: black;
-  /* color: white; */
+/*   color: white; */
 }
 
 .theme-dark.active {
     background: white;
-  /* color: black; */
+/*   color: black; */
 }
 
 .theme-white {
@@ -52,7 +52,7 @@ p::-webkit-scrollbar {
   width: 100%;
   border: 0;
   overflow: none;
-  padding: 20px;
+  padding: 50px;
   cursor: pointer;
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
@@ -73,6 +73,6 @@ p::-webkit-scrollbar {
   }
 
   p {
-    padding: 150px 20px;
+    padding: 180px 20px;
   }
 }

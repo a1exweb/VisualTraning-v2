@@ -10,15 +10,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-p {
-  display: block;
-  margin: auto;
-  padding: 0 5px;
-  max-width: 1400px;
-  max-height: 80vh;
-  overflow-y: scroll;
-}
-
 p::-webkit-scrollbar {
   width: 0;
 }
@@ -68,21 +59,31 @@ p::-webkit-scrollbar {
 }
 
 
-.description {
-  display: none;
+p {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  max-width: 1400px;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
-@media (min-width: 980px) {
+.description {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #eee;
+  padding: 20px;
+}
+
+@media (max-width: 980px) {
   .description {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #eee;
-    padding: 20px;
+    display: none;
   }
+
   p {
-    padding: 10px 20px;
+    padding: 0 5px;
   }
 }

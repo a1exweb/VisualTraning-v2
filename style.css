@@ -6,6 +6,10 @@ body {
   font-size: calc(18px + 22 * ((100vw - 320px) / 960));
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 p {
   display: block;
   margin: auto;

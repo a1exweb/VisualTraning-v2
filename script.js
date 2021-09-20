@@ -26,7 +26,7 @@ setTimeout(() => {
 
 
 document.querySelector('body').addEventListener('mousedown', (e) => {
-  if (!e.target.matches('p') && !e.target.matches('#theme')) {
+  if (!e.target.matches('p') && !e.target.matches('#theme') && !e.target.matches('#zoom')) {
     changeBg();
   }
 });
